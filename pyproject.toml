@@ -10,6 +10,18 @@ dependencies = [
     "sqlalchemy>=2.0.48",
 ]
 
+
+[tool.pytest.ini_options]
+
+minversion = "9.0"
+
+addopts = """
+-v
+-ra
+--tb=short
+"""
+
+
 [dependency-groups]
 dev = [
     "ruff>=0.15.5",
